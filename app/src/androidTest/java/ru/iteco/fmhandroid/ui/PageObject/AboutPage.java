@@ -14,6 +14,7 @@ public class AboutPage {
     public ViewInteraction getAboutElementButtonAbout;
     public ViewInteraction getAboutElementButtonPrivacyPolicy;
     public ViewInteraction getAboutElementButtonTermsOfUse;
+    public ViewInteraction getCheckDisplayOEmployeesCompanyLabel;
     public ViewInteraction getPressBackButton;
 
     public AboutPage() {
@@ -21,5 +22,6 @@ public class AboutPage {
         getAboutElementButtonPrivacyPolicy = onView(withId(R.id.about_privacy_policy_value_text_view));
         getAboutElementButtonTermsOfUse = onView(withId(R.id.about_terms_of_use_value_text_view));
         getPressBackButton = onView(withId(R.id.about_back_image_button));
+        getCheckDisplayOEmployeesCompanyLabel = onView(allOf(withId(R.id.about_company_info_label_text_view), withText("© I-Teco, 2022")));
     }
 }

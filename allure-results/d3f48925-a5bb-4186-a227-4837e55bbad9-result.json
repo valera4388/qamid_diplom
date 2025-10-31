@@ -1,0 +1,217 @@
+{
+    "name": " Авторизация с паролем зарегистрированного пользователя введенным в верхнем регистре (ID - 3)",
+    "start": 1761941665857,
+    "stop": 1761941674210,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": " Загрузка страницы авторизации",
+            "start": 1761941666730,
+            "stop": 1761941666730,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать на кнопку Выход",
+            "start": 1761941672142,
+            "stop": 1761941672142,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать на кнопку для выхода из приложения",
+            "start": 1761941672657,
+            "stop": 1761941672657,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Загрузка страницы авторизации",
+            "start": 1761941673024,
+            "stop": 1761941673024,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Ожидание отображения поля ввода данных Логин",
+            "start": 1761941673030,
+            "stop": 1761941673030,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Отобразилаcь страница Авторизации",
+            "start": 1761941673034,
+            "stop": 1761941673034,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Поле Логин - ввод данныхlogin2",
+            "start": 1761941673043,
+            "stop": 1761941673043,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Поле Пароль - ввод данныхPASSWORD2",
+            "start": 1761941673064,
+            "stop": 1761941673064,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать на кнопку Войти",
+            "start": 1761941673095,
+            "stop": 1761941673095,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Ошибка Авторизации",
+            "start": 1761941673646,
+            "stop": 1761941673646,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "d3f48925-a5bb-4186-a227-4837e55bbad9",
+    "historyId": "51e27dc1ec0bd070994d84d7b6663712",
+    "fullName": "ru.iteco.fmhandroid.ui.Tests.AuthorizationTest.passwordUppercase",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.Tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.Tests.AuthorizationTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "passwordUppercase"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.Tests.AuthorizationTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(1424)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": " Тест-кейсы для функционального тестирования Авторизации мобильного приложения"
+        }
+    ]
+}

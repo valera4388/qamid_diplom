@@ -24,42 +24,63 @@ public class AuthorizationSteps {
     AuthorizationPage authorizationPage = new AuthorizationPage();
 
     public void loadAuthorizationPage() {
-        Allure.step("Загрузка страницы авторизации");
+        Allure.step(" Загрузка страницы авторизации");
         onView(isRoot()).perform(waitDisplayed((authorizationPage.enterButton), 5000));
     }
 
     public void clickButtonSignIn() {
-        Allure.step("Нажать на кнопку Войти");
+        Allure.step(" Нажать на кнопку Войти");
         authorizationPage.getAuthorizationElementsButton
                 .perform(click());
     }
 
     public void clickButtonExit() {
-        Allure.step("Нажать на кнопку Выход");
+        Allure.step(" Нажать на кнопку Выход");
         authorizationPage.getAuthorizationElementsButtonExit
                 .perform(click());
     }
 
     public void clickButtonLogOut() {
-        Allure.step("Нажать на кнопку для выхода из приложения");
+        Allure.step(" Нажать на кнопку для выхода из приложения");
         authorizationPage.getAuthorizationElementsButtonLogOut
                 .perform(click());
     }
 
     public void textAuthorization() {
-        Allure.step("Отобразилаcь страница Авторизации");
+        Allure.step(" Отобразилаcь страница Авторизации");
         authorizationPage.getAuthorizationElementsTextAuthorization
                 .check(matches(isDisplayed()));
     }
 
     public void fillLoginField(String text) {
-        Allure.step("Поле Логин - ввод данных" + text);
+        Allure.step(" Поле Логин - ввод данных" + text);
         authorizationPage.getAuthorizationElementsLoginField.perform(replaceText(text));
     }
 
     public void fillPasswordField(String text) {
-        Allure.step("Поле Пароль - ввод данных" + text);
+        Allure.step(" Поле Пароль - ввод данных" + text);
         authorizationPage.getAuthorizationElementsPasswordField.perform(replaceText(text));
+    }
+    public void waitingForLoginInputFieldDisplay() {
+        Allure.step(" Ожидание отображения поля ввода данных Логин");
+        onView(isRoot()).perform(waitDisplayed(getLoginLayout(), 5000));
+    }
+
+    public void waitingForUserIconDisplayed() {
+        Allure.step(" Ожидание отображения иконки Пользователь");
+        onView(isRoot()).perform(waitDisplayed(getUserIcon(), 3000));
+    }
+
+    public void textAuthorizationError() {
+        Allure.step(" Ошибка Авторизации");
+        authorizationPage.getTextAuthorizationError
+                .check(matches(isDisplayed()));
+    }
+
+    public void textEmptyAuthorizationFieldError() {
+        Allure.step(" Ошибка пустого поля Авторизации");
+        authorizationPage.getTextEmptyAuthorizationFieldError
+                .check(matches(isDisplayed()));
     }
 
     public static String getLogin() {
@@ -93,5 +114,8 @@ public class AuthorizationSteps {
     }
     public int getLoginLayout() {
         return authorizationPage.loginLayout;
+    }
+    public int getUserIcon() {
+        return authorizationPage.userIcon;
     }
 }

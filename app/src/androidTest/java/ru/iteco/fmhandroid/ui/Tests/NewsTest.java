@@ -1,14 +1,5 @@
 package ru.iteco.fmhandroid.ui.Tests;
 
-import static androidx.test.espresso.Espresso.onView;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
-import static androidx.test.espresso.matcher.ViewMatchers.withId;
-import static androidx.test.espresso.matcher.ViewMatchers.withParent;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static org.hamcrest.Matchers.allOf;
-import static ru.iteco.fmhandroid.ui.DataHelper.DataHelper.waitDisplayed;
 import static ru.iteco.fmhandroid.ui.Steps.AuthorizationSteps.getLogin;
 import static ru.iteco.fmhandroid.ui.Steps.AuthorizationSteps.getPassword;
 
@@ -23,7 +14,6 @@ import org.junit.runner.RunWith;
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
 import io.qameta.allure.kotlin.Epic;
 import io.qameta.allure.kotlin.junit4.DisplayName;
-import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.AppActivity;
 import ru.iteco.fmhandroid.ui.Steps.AuthorizationSteps;
 import ru.iteco.fmhandroid.ui.Steps.MainSteps;
@@ -32,7 +22,7 @@ import ru.iteco.fmhandroid.ui.Steps.NewsSteps;
 @LargeTest
 @RunWith(AllureAndroidJUnit4.class)
 
-@Epic("Тест-кейсы для функционального тестирования вкладки News")
+@Epic(" Тест-кейсы для функционального тестирования вкладки News")
 public class NewsTest {
     AuthorizationSteps authorizationSteps = new AuthorizationSteps();
     MainSteps mainSteps = new MainSteps();
@@ -54,12 +44,11 @@ public class NewsTest {
     }
 
     @Test
-    @DisplayName("Переход в раздел News из бургер-меню (ID - 13)")
+    @DisplayName(" Переход в раздел News из бургер-меню (ID - 13)")
     public void goNewsSection() {
-        onView(isRoot()).perform(waitDisplayed(mainSteps.getMainMenuButton(), 5000));
+        mainSteps.waitUntilMainMenuButtonDisplayed();
         mainSteps.clickButtonMainMenu();
         newsSteps.clickButtonNews();
-        onView(allOf(withText("News"),
-                withParent(withParent(withId(R.id.container_list_news_include))))).check(matches(isDisplayed()));
+        newsSteps.newsSectionHasBeenDisplayed();
     }
 }

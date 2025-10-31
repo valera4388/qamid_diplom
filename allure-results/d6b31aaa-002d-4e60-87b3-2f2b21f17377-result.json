@@ -1,0 +1,153 @@
+{
+    "name": " Возвращение к предыдущей странице нажав кнопку назад из раздел О приложении (ID - 58)",
+    "start": 1761941545787,
+    "stop": 1761941555193,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": " Загрузка страницы",
+            "start": 1761941547909,
+            "stop": 1761941547910,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Ожидание отображения кнопки гланого меню",
+            "start": 1761941552541,
+            "stop": 1761941552541,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать на кнопку Главного меню",
+            "start": 1761941552575,
+            "stop": 1761941552575,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать кнопку О приложении (About) в Главном меню",
+            "start": 1761941553277,
+            "stop": 1761941553277,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать на кнопку назад из раздела О приложении",
+            "start": 1761941553709,
+            "stop": 1761941553709,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Отобразилась панель Новости (News) в разделе Main",
+            "start": 1761941554147,
+            "stop": 1761941554147,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "d6b31aaa-002d-4e60-87b3-2f2b21f17377",
+    "historyId": "9ea55129d3ae0bed246a52c7150a1896",
+    "fullName": "ru.iteco.fmhandroid.ui.Tests.AboutTest.returnToPreviousPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.Tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.Tests.AboutTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "returnToPreviousPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.Tests.AboutTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(1419)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": " Тест-кейсы для функционального тестирования вкладки About"
+        }
+    ]
+}

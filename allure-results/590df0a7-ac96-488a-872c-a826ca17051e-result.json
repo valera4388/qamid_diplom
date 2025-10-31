@@ -1,0 +1,137 @@
+{
+    "name": " Переход в раздел News из бургер-меню (ID - 13)",
+    "start": 1761941864641,
+    "stop": 1761941873636,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": " Загрузка страницы",
+            "start": 1761941866744,
+            "stop": 1761941866745,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Ожидание отображения кнопки гланого меню",
+            "start": 1761941871059,
+            "stop": 1761941871059,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать на кнопку Главного меню",
+            "start": 1761941871093,
+            "stop": 1761941871093,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать на кнопку Новости в Главном меню",
+            "start": 1761941871748,
+            "stop": 1761941871772,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Отобразился раздел Новости (News)",
+            "start": 1761941872376,
+            "stop": 1761941872376,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "590df0a7-ac96-488a-872c-a826ca17051e",
+    "historyId": "ce5e60a146151706dabfedbc16356452",
+    "fullName": "ru.iteco.fmhandroid.ui.Tests.NewsTest.goNewsSection",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.Tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.Tests.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "goNewsSection"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.Tests.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(1449)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": " Тест-кейсы для функционального тестирования вкладки News"
+        }
+    ]
+}

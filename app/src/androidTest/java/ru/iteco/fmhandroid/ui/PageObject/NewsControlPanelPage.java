@@ -1,14 +1,20 @@
 package ru.iteco.fmhandroid.ui.PageObject;
 
 import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.matcher.RootMatchers.withDecorView;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
 import static ru.iteco.fmhandroid.ui.DataHelper.DataHelper.withIndex;
 
+import android.view.View;
+
 import androidx.test.espresso.ViewInteraction;
+
+import org.hamcrest.Matchers;
 
 import ru.iteco.fmhandroid.R;
 
@@ -38,6 +44,17 @@ public class NewsControlPanelPage {
     public ViewInteraction getNewsControlPanelElementsButtonNotActiveNewsFilter;
     public ViewInteraction getNewsControlPanelElementsClickDateButtonToCreateStartingDate;
     public ViewInteraction getNewsControlPanelElementsClickDateButtonToCreateEndDate;
+    public ViewInteraction getNewsFromPanelCheckVisibilityOfNewsDescription;
+    public ViewInteraction getNewsControlPanelElementsEmptyFieldErrorCheck;
+    public ViewInteraction getNewsControlPanelElementsCheckingErrorFailedSave;
+    public ViewInteraction getNewsControlPanelElementsCheckingErrorWrongPeriod;
+    public ViewInteraction getNewsControlPanelElementsCheckingCreationDateOfNews;
+    public ViewInteraction getNewsControlPanelElementsFillingInDateField;
+    public ViewInteraction getNewsFromPanelCheckVisibilityOfNewsTitle;
+    public ViewInteraction getCheckingDeleteNews;
+    public ViewInteraction getNewsFromPanelCheckNewsStatus;
+
+    private View decorView;
 
     public static String categoryAdvertisement;
     public static String titleAdvertisement;
@@ -46,6 +63,11 @@ public class NewsControlPanelPage {
     public static String fieldEmpty;
     public static String specialSymbol;
     public static String numbersCategory;
+    public static String createDate;
+    public static String verificationDate;
+    public static String statusActive;
+    public static String statusNotActive;
+    public static String switcherStatusNotActive;
 
        public NewsControlPanelPage() {
 
@@ -72,6 +94,15 @@ public class NewsControlPanelPage {
         getNewsControlPanelElementsButtonNotActiveNewsFilter = onView(withIndex(withId(R.id.filter_news_inactive_material_check_box), 0));
         getNewsControlPanelElementsClickDateButtonToCreateStartingDate = onView(withId(R.id.news_item_publish_date_start_text_input_edit_text));
         getNewsControlPanelElementsClickDateButtonToCreateEndDate = onView(withId(R.id.news_item_publish_date_end_text_input_edit_text));
+        getNewsFromPanelCheckVisibilityOfNewsDescription = onView(withIndex(withId(R.id.news_item_description_text_view), 0));
+        getNewsControlPanelElementsEmptyFieldErrorCheck = onView(withText("Fill empty fields")).inRoot(withDecorView(Matchers.not(decorView)));
+        getNewsControlPanelElementsCheckingErrorFailedSave = onView(withText("Saving failed. Try again later.")).inRoot(withDecorView(Matchers.not(decorView)));
+        getNewsControlPanelElementsCheckingErrorWrongPeriod = onView(withText("Wrong period")).inRoot(withDecorView(Matchers.not(decorView)));
+        getNewsControlPanelElementsCheckingCreationDateOfNews = onView(withIndex(withId(R.id.news_item_create_date_text_view),0));
+        getNewsControlPanelElementsFillingInDateField = onView(withIndex(withId(R.id.news_item_publication_date_text_view), 0));
+        getNewsFromPanelCheckVisibilityOfNewsTitle = onView(withIndex(withId(R.id.news_item_title_text_view), 0));
+        getCheckingDeleteNews = onView(allOf(withId(R.id.news_item_title_text_view), withText(descriptionAdvertisement)));
+        getNewsFromPanelCheckNewsStatus = onView(withIndex(withId(R.id.news_item_published_text_view), 0));
 
         categoryAdvertisement = "Объявление";
         titleAdvertisement = "Дом";
@@ -80,5 +111,10 @@ public class NewsControlPanelPage {
         fieldEmpty = "";
         specialSymbol = "@}$#!";
         numbersCategory = "12345";
+        createDate = "15.04.2026";
+        verificationDate = "15.12.2026";
+        statusActive = "ACTIVE";
+        statusNotActive = "NOT ACTIVE";
+        switcherStatusNotActive = "Not active";
     }
 }

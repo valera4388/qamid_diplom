@@ -1,0 +1,153 @@
+{
+    "name": " Свернуть/развернуть цитату кликнув на нее (ID - 60)",
+    "start": 1761941749775,
+    "stop": 1761941756451,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": " Загрузка страницы",
+            "start": 1761941750529,
+            "stop": 1761941750529,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Ожидание отображения иконки Бабочка.",
+            "start": 1761941754460,
+            "stop": 1761941754460,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " На главной странице экрана приложения нажать на кнопку Бабочка (Тематические цитаты).",
+            "start": 1761941754492,
+            "stop": 1761941754492,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Отобразился заголовок Love is all на вкладке Тематические цитаты.",
+            "start": 1761941755158,
+            "stop": 1761941755158,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Нажать на кнопку развернуть тематическую цитату.",
+            "start": 1761941755163,
+            "stop": 1761941755163,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": " Отображается цитата Love is all на вкладке Тематические цитаты.",
+            "start": 1761941755616,
+            "stop": 1761941755616,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "c5f9ca23-40b9-4924-aa92-e524d790863c",
+    "historyId": "3018f4f3c8d9a47c3c35162e92d7c0ac",
+    "fullName": "ru.iteco.fmhandroid.ui.Tests.LoveIsAllTest.expandLoveIsAll",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.Tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.Tests.LoveIsAllTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "expandLoveIsAll"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.Tests.LoveIsAllTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(1435)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": " Тест-кейсы проведения функционального тестирования вкладки Love is All"
+        }
+    ]
+}

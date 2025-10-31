@@ -30,6 +30,5 @@ public class MainPage {
         mainMenuButton = R.id.main_menu_image_button;
         buttonToExpandNews = R.id.expand_material_button;
         allNews = R.id.all_news_text_view;
-
     }
 }
